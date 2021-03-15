@@ -65,7 +65,7 @@ class AutorTest {
 	@Test
 	void testSetImeKratakString() {
 		
-		assertThrows(java.lang.NullPointerException.class, () -> a.setIme("P"));
+		assertThrows(java.lang.RuntimeException.class, () -> a.setIme("P"));
 	}
 	@Test
 	void testSetPrezime() {
@@ -80,7 +80,7 @@ class AutorTest {
 	@Test
 	void testSetPrezimeKratakString() {
 		
-		assertThrows(java.lang.NullPointerException.class, () -> a.setPrezime("T"));
+		assertThrows(java.lang.RuntimeException.class, () -> a.setPrezime("T"));
 	}
 
 	@Test
